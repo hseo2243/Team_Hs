@@ -1,0 +1,279 @@
+@charset "UTF-8";
+
+@import url(/source/style_Reset.css);
+
+/*
+베이지색 : #fef4e1
+하늘색 : #9ddddb
+찍어보기용 : 	border: 1px solid  #000;
+*/
+
+/*main 시험용 css 입니다. 나중에 삭제해주세요.*/
+body {
+	overflow: auto; 
+}
+
+/*헤더템플릿 영역 시작*/
+#header * {
+	padding: 0;
+	margin: 0 auto;
+}
+
+#header>#header_LogoImg {
+	height: 250px;
+	width: 100%;
+	text-align: center;
+	background-color: #fef4e1;
+}
+
+#header>#header_LogoImg>a>img {
+	height: 100%;
+	display: block;
+}
+
+#header>#header_GNB>#header_MainUl {
+	width: 100%;
+	height: 80px;
+	background-color: #9ddddb;
+	text-align: center;
+}
+
+#header>#header_GNB>#header_MainUl>.header_MainLi {
+	flex: 3;
+	padding-top: 20px;
+	width: 100%;
+}
+
+#header>#header_GNB>#header_MainUl>.header_MainLi>a {
+	font-weight: bold;
+	font-size: 25px;
+	cursor: pointer;
+}
+
+#header>#header_GNB>#header_MainUl>.header_MainLi>a:hover {
+	color: #fef4e1;
+}
+
+#header>#header_GNB>#header_MainUl>#header_MemberIcon {
+	flex: 1;
+	width: 100%;
+}
+
+#header>#header_GNB>#header_MainUl>#header_MemberIcon>img {
+	height: 80%;
+	padding: 5px;
+	cursor: pointer;
+	padding: 5px
+}
+
+.header_Fixed {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+}
+
+/*모달 레이어 영역*/
+.screen {
+	position: absolute;
+	width: 100%;
+	height: 1000%;
+	background: rgba(0, 0, 0, 0.8);
+	top: 0;
+	left: 0;
+	display: none;
+}
+
+.not_scroll {
+	position: fixed;
+	overflow: hidden;
+	width: 100%;
+	height: 100%;
+}
+
+#header_Login {
+	width: 350px;
+	height: auto;
+	background: #fff;
+	position: absolute;
+	margin: 0;
+	top: 340px;
+	right: 3%;
+	text-align: center;
+	box-sizing: border-box;
+	padding: 10px 5px;
+	cursor: pointer;
+	display: none;
+	border: 3px solid #9ddddb;
+	border-radius: 5%;
+}
+
+#header_Login:after {
+ border-top:0px solid transparent;
+ border-left: 20px solid transparent;
+ border-right: 20px solid transparent;
+ border-bottom: 20px solid #9ddddb;
+ content:"";
+ position:absolute;
+ top:-21px;
+ right:9px;
+}
+
+#header_BeforeLogin {
+	display: block;
+}
+
+#header_AfterLogin {
+	display: none;
+}
+
+/*모달 레이어 영역*/
+
+/*로그인 영역*/
+
+#header_BeforeLogin fieldset {
+	border-color: #9ddddb;
+	padding: 10px 5px 20px 5px;
+	width: 80%;
+}
+
+#header_BeforeLogin fieldset>legend{
+	font-size: 20px;	
+	font-weight: bold;
+}
+
+#header_BeforeLogin>#header_BeforeSns>fieldset img{
+	width: 50px;
+	height: 50px;
+}
+
+
+#header_BeforeLogin>#header_BeforeId input{
+	width: 80%;
+	height: 25px;
+	font-size: 16px;
+	margin: 5px;
+}
+
+#header_BeforeLogin  button {
+	background-color: #9ddddb;
+	font-size: 15px;
+	padding: 5px;
+	margin: 10px 15px;
+	font-weight: bold;
+	width: 30%;
+	border: none;
+	cursor: pointer;
+}
+
+#header_BeforeLogin  button:hover{
+	color: #fef4e1;
+}
+
+#header_BeforeLogin>.header_BLLi>a {
+	text-align: left;
+	font-size: 13px;
+	color: #9ddddb;
+}
+
+/*로그인 영역*/
+
+/*헤더템플릿 영역 끝*/
+/*/////////////////////////////////////////////////////////////////////////////////////////////////////*/
+/*푸터템플릿 영역 시작*/
+#footer {
+	padding: 4% 8%;
+	margin: 0;
+	background-color: #fef4e1;
+}
+
+#footer>#footer_CompanyInfo {
+	flex: 2;
+}
+
+#footer>#footer_CompanyInfo>#footer_ComInfoUl {
+	text-align: center;
+	padding-bottom: 20px;
+}
+
+#footer>#footer_CompanyInfo>#footer_ComInfoUl>.footer_ComInLi:after {
+	content: "|";
+	margin: 10px;
+}
+
+#footer>#footer_CompanyInfo>#footer_ComInfoUl>.footer_ComInLi:last-child:after
+	{
+	content: "\00a0"
+}
+
+#footer>#footer_CompanyInfo>#footer_ComInfoUl>.footer_ComInLi>a:hover {
+	font-weight: bold;
+	color: #9ddddb;
+}
+
+#footer>#footer_CompanyInfo>#footer_ComInfoTbl {
+	border-collapse: collapse;
+}
+
+#footer>#footer_CompanyInfo>#footer_ComInfoTbl>tbody>tr>td {
+	font-size: 18px;
+	padding: 8px 0;
+	border-bottom: 2px solid #9ddddb;
+	vertical-align: middle;
+}
+
+#footer>#footer_CompanyInfo>#footer_ComInfoTbl>tbody>tr>td:last-child {
+	font-size: 20px;
+	padding: 0 10px;
+	font-weight: bold;
+}
+
+#footer>#footer_Sns {
+	flex: 1;
+}
+
+#footer>#footer_Sns>#footer_SnsUl {
+	margin-bottom: 50px;
+	padding: 0 40px;
+}
+
+#footer>#footer_Sns>#footer_SnsUl>.footer_SnsLi {
+	flex: 1;
+}
+
+#footer>#footer_Sns>#footer_SnsUl>.footer_SnsLi>a>img {
+	width: 100%;
+	height: 100%;
+}
+
+#footer>#footer_Sns>#footer_CopyRight {
+	font-size: 15px;
+	color: #808080;
+	margin: 20px 0;
+	text-align: center;
+}
+
+/*푸터템플릿 영역 끝*/
+
+/*누르면 상단으로 올라가는 버튼*/
+#topBtn {
+	position: fixed;
+	right: 2%;
+	bottom: 2%;
+	width: 70px;
+	height: 70px;
+	display: block;
+	background-color: #fef4e1;
+	color: #9ddddb;
+	font-size: 20px;
+	text-align: center;
+	border-radius: 5px;
+	border: 3px solid #9ddddb;
+	display: block;
+}
+
+#topBtn>img {
+	width: 100%;
+	height: 100%;
+}
+/*누르면 상단으로 올라가는 버튼*/

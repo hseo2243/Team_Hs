@@ -1,0 +1,187 @@
+@charset "UTF-8";
+
+@import url(/source/style_Reset.css);
+
+/*
+베이지색 : #fef4e1
+하늘색 : #9ddddb
+찍어보기용 : 	border: 1px solid  #000;
+*/
+
+/*main 인기글&최신글 목록 시작*/
+/*추후에 게시판 작업 완료되면 수정해주세요.*/
+#main>h2 { 
+	width: 98%;
+	font-size: 25px;
+	margin: 20px auto;
+	padding-bottom: 20px;
+	border-bottom: 1px dashed #9ddddb;
+}
+
+.main_MenuLi {
+	flex: 1;
+	border: 1px solid #c0c0c0;
+	margin: 1%;
+	height: auto;
+}
+
+.main_MenuLi>img {
+	margin: 0 auto;
+	width: 100%;
+	height: 370px;
+}
+
+#main>hr {
+	margin: 50px 0;
+}
+
+/*main 인기글&최신글 목록 끝*/
+/*//////////////////////////////////////////////////////////////////////////////////*/
+
+/*회원가입 영역 시작*/
+.joinInsert {
+	padding: 20px;
+}
+
+.joinInsert h2 {
+	font-size: 20px;
+	border-bottom: 1px dashed #9ddddb;
+	padding: 5px 0;
+	margin: 10px 0;
+}
+
+/*회원가입-SNS 가입 영역 시작*/
+#joinSns {
+	margin: 0 auto;
+	margin-bottom: 20px;
+	border-bottom: 2px solid #9ddddb;
+	padding: 10px 0;
+}
+
+#joinSns img {
+	width: 40px;
+	height: 40px;
+	float: left;
+	margin-right: 10px;
+}
+
+#joinSns>#joinSnsUl>.joinSnsLi {
+	flex: 1;
+}
+
+#joinSns>#joinSnsUl>.joinSnsLi button {
+	width: 80%;
+	background-color: #fff;
+	border: none;
+	cursor: pointer;
+	text-align: left;
+	margin-right: 10%;
+}
+
+#joinSns>#joinSnsUl>.joinSnsLi p {
+	padding-top: 10px;
+	color: #808080;
+}
+
+#joinSns>#joinSnsUl>.joinSnsLi p:hover {
+	color: #000;
+	font-weight: bold;
+}
+
+/*회원가입-SNS 가입 영역 끝*/
+
+/*회원가입-일반 가입 영역 시작*/
+#joinBasic {
+	margin: 0 auto;
+	margin-bottom: 20px;
+	border-bottom: 2px solid #9ddddb;
+	padding: 10px 0;
+}
+
+#joinBasic>#regFrmTbl{
+	border-collapse: collapse;
+	width: 100%;
+}
+
+#joinBasic>#regFrmTbl>tbody>tr>td {
+	padding: 10px;
+	border-bottom: 1px solid #dfdfdf;
+}
+
+#joinBasic>#regFrmTbl>tbody>tr>td * {
+	vertical-align: middle;
+	font-size: 15px;
+	margin: 5px 0;
+}
+
+#joinBasic>#regFrmTbl>tbody>tr>td input {
+	height: 25px;
+	border: 1px solid #dfdfdf;
+}
+
+#joinBasic>#regFrmTbl>tbody>tr>td input[type=text] {
+	width: 150px;
+	padding: 0 5px;
+}
+
+#joinBasic>#regFrmTbl>tbody>tr>td input[type=password]{
+	width: 150px;
+	padding: 0 5px;
+}
+
+
+#joinBasic>#regFrmTbl>tbody>tr>td>select {
+	width: 100px;
+	height: 30px;
+	font-size: 12px;
+	border: 1px solid #dfdfdf;
+}
+
+#joinBasic>#regFrmTbl>tbody>tr>td span {
+	font-size: 14px;
+}
+
+#joinBasic>#regFrmTbl>tbody>tr>td>#phoneAuthArea>button {
+	width: 100px;
+	height: 30px;
+	background-color: #fff;
+	font-size: 14px;
+	border: 1px solid #dfdfdf;
+}
+
+/*회원가입-일반 가입 영역 끝*/
+
+/*회원가입- 동의 영역 시작*/
+#licenseArea>.termArea {
+	margin: 20px 0;
+}
+
+#licenseArea>.termArea iframe{
+	width: 100%;
+	border: 1px solid #dfdfdf;
+	margin: 0 auto;
+}
+
+
+#joinBtnUl button {
+	width: 200px;
+	background-color: #9ddddb;
+	font-size: 20px;
+	padding: 5px;
+	margin: 10px 15px;
+	font-weight: bold;
+	border: none;
+	cursor: pointer;
+}
+
+#joinBtnUl  button:hover{
+	color: #fef4e1;
+}
+
+#joinBtnUl>.joinBtnLi{
+	margin: 0 auto;
+	flex:1;
+}
+/*회원가입- 동의 영역 끝*/
+
+/*회원가입 영역 끝*/
