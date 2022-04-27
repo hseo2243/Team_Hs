@@ -79,6 +79,8 @@ $(function() {
 		let uEmail_01 = $("#uEmail_01").val().trim();
 		let uEmail_02 = $("#uEmail_02").val().trim();
 		$("#uEmail").val(uEmail_01 + "@" + uEmail_02);
+		
+		
 		let uPw = $("#uPw").val().trim();
 		$("#uPw").val(uPw);
 		let uPw_Re = $("#uPw_Re").val().trim();

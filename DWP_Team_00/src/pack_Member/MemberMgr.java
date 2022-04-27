@@ -108,7 +108,7 @@ public class MemberMgr {
 			objPool = DBConnectionMgr.getInstance();
 			objConn = objPool.getConnection();
 
-			sql = "select count(*) from memberS where uId = ? and pw = ?";
+			sql = "select count(*) from member where uEmail = ? and uPw = ?";
 			objPstmt = objConn.prepareStatement(sql);
 			objPstmt.setString(1, uEmail);
 			objPstmt.setString(2, uPw);
@@ -134,20 +134,20 @@ public class MemberMgr {
 	/* 로그인 사용자 이름 반환 시작 */
 	public String getMemberName(String uEmail) {
 
-		String name = "";
+		String uName = "";
 
 		try {
 
 			objPool = DBConnectionMgr.getInstance();
 			objConn = objPool.getConnection();
 
-			sql = "select name from member where uEmail = ?";
+			sql = "select uName from member where uEmail = ?";
 			objPstmt = objConn.prepareStatement(sql);
 			objPstmt.setString(1, uEmail);
 
 			objRs = objPstmt.executeQuery();
 			if (objRs.next()) {
-				name = objRs.getNString(1);
+				uName = objRs.getNString(1);
 			}
 
 		} catch (Exception e) {
@@ -156,8 +156,8 @@ public class MemberMgr {
 			objPool.freeConnection(objConn, objPstmt, objRs);
 		}
 
-		return name;
+		return uName;
 	}
 
-	/* 로그인 사용자 이름 반환 시작 */
+	/* 로그인 사용자 이름 반환 끝 */
 }

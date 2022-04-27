@@ -25,7 +25,7 @@ $(function() {
 	/* 스크롤바 상단 고정 끝 */
 
 	/* 회원정보 누르면 모달레이어 팝업 구현 시작 */
-	$('#header_MemberIcon img').click(function() {
+	$('#header_MemberIcon').click(function() {
 		
 		$('.screen').fadeIn();
 		$("html, body").addClass("not_scroll");
@@ -52,6 +52,12 @@ $(function() {
 		location.href = "/member/join.jsp";
 	});
 	/* 회원가입 버튼 눌러서 페이지 이동 끝 */
+	/* 로그인 버튼 눌러서 페이지 이동 시작 */
+	$("#loginBtn").click(function(){
+		location.href = "/member/login.jsp";
+	});
+	/* 로그인 버튼 눌러서 페이지 이동 끝 */
+	
 	
 });
 /* 헤더 템플릿 끝*/

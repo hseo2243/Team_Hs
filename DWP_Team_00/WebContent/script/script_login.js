@@ -3,9 +3,18 @@
  */
 $(function() {
 
+	$("#emailDomain").change(function() {
+		let eDomain = $(this).val().trim();
+		$("#uEmail_02").val(eDomain);
+		if (eDomain == "") {
+			$("#uEmail_02").focus();
+		} else {
+			$("#uEmail_01").focus();
+		}
+	});
 
 	/* 로그인 버튼 전송 실행 */
-	$("#loginBtn").click(function() {
+	$("#loginPBtn").click(function() {
 		fnLoginSbm();
 	});
 
@@ -21,24 +30,36 @@ $(function() {
 
 	function fnLoginSbm() {
 
-		let id = $(".uEmail").val().trim();
-		$(".uEmail").val(id);
-		let pw = $(".uPw").val().trim();
-		$(".uPw").val(pw);
 
-		if (id == "") {
+
+		let uEmail_01 = $("#uEmail_01").val().trim();
+		let uEmail_02 = $("#uEmail_02").val().trim();
+		$("#uEmail").val(uEmail_01 + "@" + uEmail_02);
+		
+		
+		let uEmail = $("#uEmail").val().trim();
+		
+		
+		let uPw = $("#uPw").val().trim();
+		$("#uPw").val(uPw);
+
+		if (uEmail == "") {
 			alert("이메일을 입력해주세요.");
-			$(".uEmail").focus();
+			$("#uEmail").focus();
 			return;
-		} else if (pw == "") {
+		} else if (uPw == "") {
 			alert("비밀번호를 입력해주세요.");
-			$(".uPw").focus();
+			$("#uPw").focus();
 			return;
 		} else {
-			$("#loginFrm").attr("action", "/member/loginProc.jsp");
+			$("#loginFrm").attr("action", "loginProc.jsp");
 			$("#loginFrm").submit();
 
 		}
 	};
-	
+
+	$("#mainBtn").click(function() {
+		location.href = "/index.jsp";
+	});
+
 });

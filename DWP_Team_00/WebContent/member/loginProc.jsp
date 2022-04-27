@@ -4,9 +4,9 @@
 
 <%
 request.setCharacterEncoding("UTF-8");
-String email = request.getParameter("uEmail");
-String pw = request.getParameter("uPw");
-boolean loginRes = mMgr.loginMember(email, pw);
+String uEmail = request.getParameter("uEmail");
+String uPw = request.getParameter("uPw");
+boolean loginRes = mMgr.loginMember(uEmail, uPw);
 %>
 <script>
 	
@@ -14,8 +14,8 @@ boolean loginRes = mMgr.loginMember(email, pw);
 	session.setAttribute("uEmail_Session", uEmail);%>
 	location.href = "/index.jsp";
 <%} else {%>
-	alert("이메일 또는 비밀번호를 확인해주세요.");
-	location.href = "/index.jsp";
+	alert("아이디 또는 비밀번호를 확인해주세요.");
+	location.href = "/member/login.jsp";
 <%}%>
 	
 </script>
