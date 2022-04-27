@@ -58,7 +58,8 @@
 									<option>daum.net</option>
 									<option>google.com</option>
 								</select>
-								<span id="uEmailMsg"></span>
+								<span id="uEmailMsg" class="subText">
+								</span>
 								<input type="hidden" name="uEmail" id="uEmail">
 							</td>
 						</tr>
