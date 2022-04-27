@@ -13,6 +13,7 @@
         <link rel="stylesheet" href="/style/style_Common.css">
         <script src="/source/jquery-3.6.0.min.js"></script>
         <script src="/script/script_main.js"></script>
+        <script src="/script/script_login.js"></script>
     </head>
 
     <body>

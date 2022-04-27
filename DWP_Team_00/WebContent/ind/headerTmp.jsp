@@ -8,9 +8,6 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <title>헤더템플릿</title>
-<link rel="stylesheet" href="/style/style_Template.css">
-<script src="/source/jquery-3.6.0.min.js"></script>
-<script src="/script/script_main.js"></script>
 </head>
 <body> 
 
@@ -44,16 +41,10 @@
 						<legend>ID 로그인</legend>
 						<ul id="header_BeforeLogin">
 							<li class="header_BLLi">
-							<input type="text" id="uEmail" name="uEmail" placeholder="이메일 입력">
-							</li>
-							<li class="header_BLLi">
-							<input type="password" id="uPw" name="uPw" placeholder="비밀번호 입력">
-							</li>
-							<li class="header_BLLi">
-							<a href="#">이메일/비밀번호 찾기</a>
-							</li>
-							<li class="header_BLLi">
+							
 							<button type="button" id="loginBtn">로그인</button>
+							</li>
+							<li class="header_BLLi">
 							<button type="button" id="joinBtn">회원가입</button>
 							</li>
 						</ul>
